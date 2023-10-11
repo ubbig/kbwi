@@ -1,6 +1,9 @@
+import {Link} from "react-router-dom";
+
 export default function Header() {
     return <div className="header">
-        <h1>토익단어장</h1>
+        <h1>
+            <Link to="/">토익단어장</Link></h1>
         <div className="menu">
             <a href="#" className="link">
                 단어추가
