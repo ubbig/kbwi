@@ -14,7 +14,7 @@ function App() {
             <Routes>
                 <Route path="/" exact element={<DayList />}>
                 </Route>
-                <Route path="/day" element={<Day />}>
+                <Route path="/day/:day" element={<Day />}>
                 </Route>
             </Routes>
         </div>
