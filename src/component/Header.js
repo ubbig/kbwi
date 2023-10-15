@@ -8,9 +8,10 @@ export default function Header(props) {
 
 
     return (
-        <div className="header">
-                <div className="header-content"><img onClick={() => navigate(-1)} src={require('../vendor/icon/back.svg').default} alt="Back Icon" className="backIcon" />
-                    <span className="category">{headerText}</span>
+        <div style={{ textAlign: 'left'}} >
+                <div style={{ display: 'flex', alignItems: 'center'}}>
+                    <img  style={{ width: '24px', height: '24px', marginRight: '20px', marginLeft: '24px'  }} onClick={() => navigate(-1)} src={require('../vendor/icon/back_arrow.png')} alt="Back Icon"  />
+                    <p style={{ fontFamily :'"Pretendard Variable", sans-serif', fontWeight: '500',fontSize:'18px'}}  className="category">{headerText}</p>
                 </div>
         </div>
     );

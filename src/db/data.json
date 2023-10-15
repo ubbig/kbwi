@@ -11,359 +11,439 @@
       "area" :"강남권"
     }
   ],
+  "recommend": [
+    {
+      "id": 1,
+      "name": "#순위 높은"
+    },
+    {
+      "id": 2,
+      "name": "#평점 높은"
+    },
+    {
+      "id": 3,
+      "name": "#사립"
+    },
+    {
+      "id": 4,
+      "name": "#국립"
+    },
+    {
+      "id": 5,
+      "name": "#교직원수가 많은"
+    },
+    {
+      "id": 6,
+      "name": "#응시자 수가 많은"
+    },
+    {
+      "id": 7,
+      "name": "#대학교 진학률 높은"
+    },
+    {
+      "id": 8,
+      "name": "#학생 수가 많은"
+    },
+    {
+      "id": 9,
+      "name": "#치안 좋은"
+    },
+    {
+      "id": 10,
+      "name": "#교복"
+    },
+    {
+      "id": 11,
+      "name": "#급식이 맛있는"
+    },
+    {
+      "id": 12,
+      "name": "#도서관이 잘 되어있는"
+    }
+  ],
   "seoulSchool": [
     {
       "id": 1,
-      "location": "서대문구 현저동",
+      "location": "서대문구",
       "name": "한성과학고등학교"
-    },{
+    },
+    {
       "id": 2,
-      "location": "서초구 반포동",
+      "location": "서초구",
       "name": "세화고등학교"
-    },{
+    },
+    {
       "id": 3,
-      "location": "광진구 중곡동",
+      "location": "광진구",
       "name": "대원외국어고등학교"
-    },{
+    },
+    {
       "id": 4,
-      "location": "은평구 진관동",
+      "location": "은평구",
       "name": "하나고등학교"
-    },{
+    },
+    {
       "id": 5,
-      "location": "강서구 내발산동",
+      "location": "강서구",
       "name": "명덕외국어고등학교"
-    },{
+    },
+    {
       "id": 6,
-      "location": "성북구 정릉동",
+      "location": "성북구",
       "name": "대일외국어고등학교"
-    },{
+    },
+    {
       "id": 7,
-      "location": "구로구 궁동",
+      "location": "구로구",
       "name": "세종과학고등학교"
-    },{
+    },
+    {
       "id": 8,
-      "location": "중구 순화동",
+      "location": "중구",
       "name": "이화여자외국어고등학교"
-    },{
+    },
+    {
       "id": 9,
-      "location": "송파구 오금동",
+      "location": "송파구",
       "name": "보인고등학교"
-    },{
+    },
+    {
       "id": 10,
-      "location": "양천구 목동",
+      "location": "양천구",
       "name": "한가람고등학교"
-    },{
+    },
+    {
       "id": 11,
-      "location": "성동구 사근동",
+      "location": "성동구",
       "name": "한양대부속고등학교"
-    },{
+    },
+    {
       "id": 12,
-      "location": "종로구 명륜1가",
+      "location": "종로구",
       "name": "서울국제고등학교"
-    },{
+    },
+    {
       "id": 13,
-      "location": "강동구 상일동",
+      "location": "강동구",
       "name": "한영외국어고등학교"
-    },{
+    },
+    {
       "id": 14,
-      "location": "중구 정동",
+      "location": "중구",
       "name": "이화여자고등학교"
-    },{
+    },
+    {
       "id": 15,
-      "location": "도봉구 창동",
+      "location": "도봉구",
       "name": "서울외국어고등학교"
-    },{
+    },
+    {
       "id": 16,
-      "location": "서초구 반포동",
+      "location": "서초구",
       "name": "세화여자고등학교"
-    },{
+    },
+    {
       "id": 17,
-      "location": "도봉구 쌍문동",
+      "location": "도봉구",
       "name": "선덕고등학교"
-    }, {
+    },
+    {
       "id": 18,
-      "location": "관악구 신림동",
+      "location": "관악구",
       "name": "미림여자고등학교"
-    }, {
+    },
+    {
       "id": 19,
-      "location": "강남구 도곡동",
+      "location": "강남구",
       "name": "숙명여자고등학교"
-    }, {
+    },
+    {
       "id": 20,
-      "location": "양천구 목동",
+      "location": "양천구",
       "name": "양정고등학교"
-    }, {
+    },
+    {
       "id": 21,
-      "location": "노원구 중계동",
+      "location": "노원구",
       "name": "대진여자고등학교"
-    }, {
+    },
+    {
       "id": 22,
-      "location": "은평구 갈현동",
+      "location": "은평구",
       "name": "대성고등학교"
-    }, {
+    },
+    {
       "id": 23,
-      "location": "양천구 신정동",
+      "location": "양천구",
       "name": "목동고등학교"
-    }, {
+    },
+    {
       "id": 24,
-      "location": "서초구 방배4동",
+      "location": "서초구",
       "name": "서문여자고등학교"
-    }, {
+    },
+    {
       "id": 25,
-      "location": "강남구 압구정동",
+      "location": "강남구",
       "name": "현대고등학교"
-    }, {
+    },
+    {
       "id": 26,
-      "location": "서대문구대신동",
+      "location": "서대문구",
       "name": "이화여대부속이화금란고등학교"
-    }, {
+    },
+    {
       "id": 27,
-      "location": "강북구 미아동",
+      "location": "강북구",
       "name": "신일고등학교"
-    }, {
+    },
+    {
       "id": 28,
-      "location": "강남구 대치동",
+      "location": "강남구",
       "name": "휘문고등학교"
-    }, {
+    },
+    {
       "id": 29,
-      "location": "마포구 대흥동",
+      "location": "마포구",
       "name": "숭문고등학교"
-    }, {
+    },
+    {
       "id": 30,
-      "location": "종로구 계동",
+      "location": "종로구",
       "name": "중앙고등학교"
-    }, {
+    },
+    {
       "id": 31,
-      "location": "강남구 일원동",
+      "location": "강남구",
       "name": "중동고등학교"
-    }, {
+    },
+    {
       "id": 32,
-      "location": "노원구 중계동",
+      "location": "노원구",
       "name": "영신여자고등학교"
     },
     {
       "id": 33,
-      "location": "영등포구 신길동",
+      "location": "영등포구",
       "name": "장훈고등학교"
     },
     {
       "id": 34,
-      "location": "송파구 방이동",
+      "location": "송파구",
       "name": "창덕여자고등학교"
     },
     {
       "id": 35,
-      "location": "양천구 목동",
+      "location": "양천구",
       "name": "강서고등학교"
     },
     {
       "id": 36,
-      "location": "노원구 상계동",
+      "location": "노원구",
       "name": "용화여자고등학교"
     },
     {
       "id": 37,
-      "location": "강남구 도곡동",
+      "location": "강남구",
       "name": "은광여자고등학교"
     },
     {
       "id": 38,
-      "location": "강서구 내발산동",
+      "location": "강서구",
       "name": "명덕고등학교"
     },
     {
       "id": 39,
-      "location": "강남구 역삼동",
+      "location": "강남구",
       "name": "진선여자고등학교"
     },
     {
       "id": 40,
-      "location": "종로구 필운동",
+      "location": "종로구",
       "name": "배화여자고등학교"
     },
     {
       "id": 41,
-      "location": "강남구 개포동",
+      "location": "강남구",
       "name": "경기여자고등학교"
     },
     {
       "id": 42,
-      "location": "동대문구 회기동",
+      "location": "동대문구",
       "name": "경희여자고등학교"
     },
     {
       "id": 43,
-      "location": "강서구 내발산동",
+      "location": "강서구",
       "name": "덕원여자고등학교"
     },
     {
       "id": 44,
-      "location": "강서구 내발산동",
+      "location": "강서구",
       "name": "명덕여자고등학교"
     },
     {
       "id": 45,
-      "location": "양천구 목동",
+      "location": "양천구",
       "name": "진명여자고등학교"
     },
     {
       "id": 46,
-      "location": "동작구 동작동",
+      "location": "동작구",
       "name": "경문고등학교"
     },
     {
       "id": 47,
-      "location": "강남구 대치1동",
+      "location": "강남구",
       "name": "단국대부속고등학교"
     },
     {
       "id": 48,
-      "location": "강남구 일원동",
+      "location": "강남구",
       "name": "중산고등학교"
     },
     {
       "id": 49,
-      "location": "송파구 송파동",
+      "location": "송파구",
       "name": "잠실여자고등학교"
     },
     {
       "id": 50,
-      "location": "동작구 대방동",
+      "location": "동작구",
       "name": "숭의여자고등학교"
     }
-    ],
+  ],
   "schoolList": [
     {
       "id": 1,
       "locationCode": 1,
-      "location": "강북구 미아동",
+      "location": "강북구",
       "name": "신일고등학교"
     },
     {
       "id": 2,
       "locationCode": 1,
-      "location": "강북구 미아4동",
+      "location": "강북구",
       "name": "창문여자고등학교"
-    }
-  ,
+    },
     {
       "id": 3,
       "locationCode": 1,
-      "location": "강북구 수유동",
+      "location": "강북구",
       "name": "혜화여자고등학교"
     },
     {
       "id": 4,
       "locationCode": 1,
-      "location": "강북구 미아동",
+      "location": "강북구",
       "name": "영훈고등학교"
     },
     {
       "id": 5,
       "locationCode": 1,
-      "location": "강북구 미아동",
+      "location": "강북구",
       "name": "삼각산고등학교"
     },
     {
       "id": 6,
       "locationCode": 1,
-      "location": "강북구 미아동",
+      "location": "강북구",
       "name": "미양고등학교"
     },
     {
       "id": 1,
       "locationCode": 2,
-      "location": "강남구 도곡동",
+      "location": "강남구",
       "name": "숙명여자고등학교"
     },
     {
       "id": 2,
       "locationCode": 2,
-      "location": "강남구 압구정동",
+      "location": "강남구",
       "name": "현대고등학교"
     },
     {
       "id": 3,
       "locationCode": 2,
-      "location": "강남구 대치동",
+      "location": "강남구",
       "name": "휘문고등학교"
     },
     {
       "id": 4,
       "locationCode": 2,
-      "location": "강남구 일원동",
+      "location": "강남구",
       "name": "중동고등학교"
     },
     {
       "id": 5,
       "locationCode": 2,
-      "location": "강남구 도곡동",
+      "location": "강남구",
       "name": "은광여자고등학교"
     },
     {
       "id": 6,
       "locationCode": 2,
-      "location": "강남구 역삼동",
+      "location": "강남구",
       "name": "진선여자고등학교"
     },
     {
       "id": 7,
       "locationCode": 2,
-      "location": "강남구 개포동",
+      "location": "강남구",
       "name": "경기여자고등학교"
     },
     {
       "id": 8,
       "locationCode": 2,
-      "location": "강남구 대치1동",
+      "location": "강남구",
       "name": "단국대부속고등학교"
     },
     {
       "id": 9,
       "locationCode": 2,
-      "location": "강남구 일원동",
+      "location": "강남구",
       "name": "중산고등학교"
     },
     {
       "id": 10,
       "locationCode": 2,
-      "location": "강남구 청담동",
+      "location": "강남구",
       "name": "영동고등학교"
     },
     {
       "id": 11,
       "locationCode": 2,
-      "location": "강남구 개포동",
+      "location": "강남구",
       "name": "개포고등학교"
     },
     {
       "id": 12,
       "locationCode": 2,
-      "location": "강남구 삼성동",
+      "location": "강남구",
       "name": "경기고등학교"
     },
     {
       "id": 13,
       "locationCode": 2,
-      "location": "강남구 도곡동",
+      "location": "강남구",
       "name": "중앙대부속고등학교"
     },
     {
       "id": 14,
       "locationCode": 2,
-      "location": "강남구 압구정동",
-      "name": "청담고등학교"
+      "location": "강남구",
+      "name": "청담고"
     },
     {
       "id": 15,
       "locationCode": 2,
-      "location": "강남구 압구정동",
+      "location": "강남구",
       "name": "압구정고등학교"
     },
     {
       "id": 16,
       "locationCode": 2,
-      "location": "강남구 수서동",
+      "location": "강남구",
       "name": "서울세종고등학교"
     }
   ]

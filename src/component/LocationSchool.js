@@ -19,12 +19,12 @@ export default function SelectSchool() {
     };
 
     return (
-        <div>
-            <Header headerText="지역 선택"/>
-            <div className="locationText">
-                <p>지역을 선택해주시면</p>
-                <p>순위를 보여드릴께요</p>
-            </div>
+        <div style={{ textAlign: 'center', marginTop :'50px'  }}>
+        <Header headerText="지역 선택"/>
+            <div style={{height:'50px'}}></div>
+            <p style={{ textAlign:'left',marginLeft: '20px', fontFamily :'"Pretendard Variable", sans-serif', fontSize:'24px', lineHeight :'3px'}}>지역을 선택해주시면</p>
+            <p style={{ textAlign:'left', marginLeft: '20px', fontFamily :'"Pretendard Variable", sans-serif', fontSize:'24px', lineHeight :'3px'}}>순위를 보여드릴께요</p>
+            <div style={{height:'34px'}}></div>
             <div className="locationContent">
                 {dummy.location.map(location => (
                     <div key={location.id}>
@@ -34,9 +34,9 @@ export default function SelectSchool() {
                     </div>
                 ))}
             </div>
-            <div className="locationFooter">
-                <button className="confirmButton" onClick={handleConfirmClick}> 확인 </button>
-            </div>
+            <div style={{height:'440px'}}></div>
+            <button style={{backgroundColor: '#366DFF', color: 'white', fontWeight: 'bold', width:'320px', height:'56px', borderRadius: '8px', border: 'none', fontSize: '16px',  fontFamily :'"Pretendard Variable", sans-serif', }} onClick={handleConfirmClick}> 확인 </button>
+            <div style={{height:'20px'}}></div>
         </div>
     );
 }

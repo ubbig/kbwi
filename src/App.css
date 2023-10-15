@@ -93,48 +93,64 @@
   position: relative;
 }
 
-.locationText{
-  position: absolute;
-  top: 8rem;
-  left: 2rem;
-  font-family: "Pretendard Variable", sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
 .locationContent{
   display: flex;
-  width: 100%;
   justify-content: center;
-  padding: 1rem;
+  margin-left: 20px;
+  margin-right: 20px;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.2rem;
 }
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  max-width: 300px;
+}
+
+.aiButton {
+  background-color: #fff;
+  border-radius: 100px;
+  border: solid 1px #ECECEC;
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.aiButton:hover,
+.aiButton.selected{
+  font-family: "Pretendard Variable", sans-serif;
+  border: solid 1px #366DFF;
+  color: #366DFF;
+  font-weight: bold;
+}
+
 
 .locationButton{
-  color: black;
-  font-size: 1rem;
-  font-family: "Pretendard Variable", sans-serif;
-  font-weight: bold;
+ background-color: #fbfbfb;
+  width: 160px;
+  height: 60px;
   border-radius: 100px;
-  width: 9rem;
-  border: 1px solid #DBDBDB;
-  background: #FBFBFB;
-  --button-hover-bg-color: #366DFF;
-}
-
-.locationFooter{
-  position: absolute;
-  bottom: 2rem;
-}
-
-.confirmButton{
   font-family: "Pretendard Variable", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: solid 1px #dbdbdb;
+}
+
+.locationButton:hover{
+  background-color: #366DFF;
+  color: white;
   font-weight: bold;
-  color: #333333;
-  width: 20rem;
-  border-radius: 12px;
-  background: #ECECEC;
 }
 
 .rankContent{
@@ -146,45 +162,61 @@
   margin-left: 3rem;
 }
 
-.ai-screen{
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 10rem;
-}
-
-.schoolContent{
-  height: 56vh;
-  overflow: auto;
-  text-align: center;
-  flex-shrink: 0;
-  position: relative;
-  top: 5rem;
-}
-
 .schoolRank{
-  width: 20rem;
+  width: 320px;
+  height: 60px;
+  margin-bottom: 12px;
   font-family: "Pretendard Variable", sans-serif;
   border-radius: 8px;
-  margin: 0.6rem;
-  background: #FFF;
+  background-color: #fff;
+  border: none ;
+  text-align: left;
+
+}
+.rankButton{
+  width: 320px;
+  height: 100px;
+  background-color: #fff;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
   color: #333333;
 }
 
-.rankButton{
-  font-family: "Pretendard Variable", sans-serif;
-  display: flex;
-  width: 19rem;
-  height: 1rem;
-  padding: 2rem 2rem;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 12px;
+.rankButton:hover{
   border: 1px solid #366DFF;
-  background: #FFF;
-  color: #366DFF;
-  margin-bottom: 1.5rem;
+  color: #366DFF ;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
 }
 
 @keyframes App-logo-spin {

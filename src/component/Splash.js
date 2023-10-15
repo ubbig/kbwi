@@ -33,7 +33,7 @@ export default function SplashScreen(){
                 <div style={{ textAlign: 'center',width : '360px', height: '100px' }}>
                 </div>
                 <Link to="/selectSchool">
-                    <button style={{ textAlign: 'center',width : '20rem', height: '3.5rem',fontFamily :'"Pretendard Variable", sans-serif', fontWeight :'bold', fontSize:'1rem' }}>
+                    <button style={{ backgroundColor: '#366DFF', border: 'none', color:'white', borderRadius:'8px',textAlign: 'center',width : '20rem', height: '3.5rem',fontFamily :'"Pretendard Variable", sans-serif', fontWeight :'bold', fontSize:'1rem' }}>
                        학교 찾으러 가기
                     </button>
                 </Link>

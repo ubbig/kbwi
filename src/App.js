@@ -6,6 +6,7 @@ import Splash from "./component/Splash";
 import SelectSchool from "./component/SelectSchool";
 import LocationSchool from "./component/LocationSchool";
 import Location from "./component/Location";
+import AiRecommend from "./component/AiRecommend";
 import Seoul from "./component/Seoul";
 import DetailSchool from "./component/DetailSchool";
 
@@ -35,6 +36,8 @@ function App() {
                 <Route path="/" exact element={<Splash />}>
                 </Route>
                 <Route path="/selectSchool" element={<SelectSchool />}>
+                </Route>
+                <Route path="/aiRecommend" element={<AiRecommend />}>
                 </Route>
                 <Route path="/locationSchool" element={<LocationSchool />}>
                 </Route>

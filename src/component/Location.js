@@ -15,22 +15,22 @@ export default function Location() {
     };
 
     return (
-        <>
+        <div style={{ textAlign: 'center',  marginTop :'220px'  }}>
             <Header headerText={`${filteredLocations[0]?.area} 순위권`}/>
-            <div className="locationText">
-                <p>학업성취도 평가 기준으로</p>
-                <p>선별하였어요</p>
-            </div>
-            <div className="schoolContent">
+            <div style={{height:'20px'}}></div>
+            <p style={{ textAlign:'left',marginLeft: '20px', fontFamily :'"Pretendard Variable", sans-serif', fontSize:'24px', lineHeight :'3px'}}>학업성취도 평가 기준으로</p>
+            <p style={{ textAlign:'left', marginLeft: '20px', fontFamily :'"Pretendard Variable", sans-serif', fontSize:'24px', lineHeight :'3px'}}>선별하였어요</p>
+            <div style={{height:'23px'}}></div>
+            <div style={{backgroundColor:'#F7F7F7', width:'360px', height:'800px',overflow: 'scroll'}}>
+            <div style={{height:'22px'}}></div>
                     {schoolRank.map(schoolRank => (
                      <button className="schoolRank" key={schoolRank.id} onClick={() => handleLocationClick(schoolRank)}>
-                         <span style={{ color: '#366DFF', fontWeight: 'bold', marginRight:'1rem' }}>{schoolRank.id}</span>
+                         <span style={{ color: '#366DFF', fontWeight: 'bold', marginRight:'20px', marginLeft:'20px' }}>{schoolRank.id}</span>
                          {schoolRank.location}<span style={{ fontWeight: 'bold', marginLeft:'0.4rem'}}>{schoolRank.name}</span>
                     </button>
-
-                ))}
-            </div>
-
-        </>
+                    ))}
+        </div>
+        <div style={{height:'20px'}}></div>
+        </div>
     );
 }
