@@ -61,6 +61,50 @@
       "name": "#도서관이 잘 되어있는"
     }
   ],
+  "imageUrls": [
+    {
+      "url": "/thumbnail/thumbnail_01.png"
+    },
+    {
+      "url": "/thumbnail/thumbnail_02.png"
+    },
+    {
+      "url": "/thumbnail/thumbnail_03.png"
+    },
+    {
+      "url": "/thumbnail/thumbnail_04.png"
+    },
+    {
+      "url": "/thumbnail/thumbnail_05.png"
+    },
+    {
+      "url": "/thumbnail/thumbnail_06.png"
+    },
+    {
+      "url": "/thumbnail/thumbnail_07.png"
+    },
+    {
+      "url": "/thumbnail/thumbnail_08.png"
+    },
+    {
+      "url": "/thumbnail/thumbnail_09.png"
+    },
+    {
+      "url": "/thumbnail/thumbnail_10.png"
+    },
+    {
+      "url": "/thumbnail/thumbnail_11.png"
+    },
+    {
+      "url": "/thumbnail/thumbnail_12.png"
+    },
+    {
+      "url": "/thumbnail/thumbnail_13.png"
+    },
+    {
+      "url": "/thumbnail/thumbnail_14.png"
+    }
+  ],
   "seoulSchool": [
     {
       "id": 1,
