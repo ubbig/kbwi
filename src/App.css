@@ -134,7 +134,17 @@
   color: #366DFF;
   font-weight: bold;
 }
-
+.moreButton{
+  display: flex;
+  padding: 11px 20px 11px 24px;
+  align-items: center;
+  gap: 4px;
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 700;
+  border-radius: 30px;
+  border: 1px solid #EAEAEA;
+  background-color: white;
+}
 
 .locationButton{
  background-color: #fbfbfb;
