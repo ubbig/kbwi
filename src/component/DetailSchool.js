@@ -23,17 +23,17 @@ export default function SelectDetailSchool() {
                 const selectedImageUrl = imageUrl + jsonImageUrls[randomIndex].url;
                 setRandomImageUrl(selectedImageUrl);
 
-                const responseSchool = await axios.post('/schoolList');
+                const responseSchool = await axios.post('/api/schoolList');
                 const responseSchoolList = responseSchool.data.result.response.body.dataBody.ARRAY수;
                 const randomIndexSchool = Math.floor(Math.random() * responseSchoolList.length);
                 const randomItem = responseSchoolList[randomIndexSchool];
                 setAddress(randomItem);
 
-                const responseApt = await axios.post('/saleList');
+                const responseApt = await axios.post('/api/saleList');
                 const responseAptList = responseApt.data.result.response.body.dataBody.ARRAY수;
                 setApt(responseAptList)
 
-                const responseAptDetail = await axios.post('/saleDetail');
+                const responseAptDetail = await axios.post('/api/saleDetail');
                 const responseAptDetailList = responseAptDetail.data.result.response.body.dataBody.ARRAY수;
                 const AptDetailList = responseAptDetailList.slice(0, responseAptList.length);
                 setDetail(AptDetailList)
