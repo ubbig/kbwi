@@ -1,16 +1,17 @@
-import {Link} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import React from 'react';
+import '../App.css';
 
-export default function Header() {
-    return <div className="header">
-        <h1>
-            <Link to="/">토익단어장</Link></h1>
-        <div className="menu">
-            <a href="#" className="link">
-                단어추가
-            </a>
-            <a href="#" className="link">
-                Day추가
-            </a>
+export default function Header(props) {
+    const { headerText } = props;
+    const navigate = useNavigate();
+
+
+    return (
+        <div className="header">
+                <div className="header-content"><img onClick={() => navigate(-1)} src={require('../vendor/icon/back.svg').default} alt="Back Icon" className="backIcon" />
+                    <span className="category">{headerText}</span>
+                </div>
         </div>
-    </div>
+    );
 }

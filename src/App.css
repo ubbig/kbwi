@@ -1,31 +1,190 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 100vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+:root {
+  font-family: "Pretendard Variable", sans-serif;
+  --vh: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+.root{
+  background-color:#366DFF ;
+}
+
+.App {
+  font-family: "Pretendard Variable ", sans-serif;
+}
+
+.App-logo {
+  height: 100vh;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /*.App-logo {*/
+  /*  animation: App-logo-spin infinite 20s linear;*/
+  /*}*/
+}
+
+.noneLink{
+  color: transparent;
+}
+
+.category {
+  color: #333333;
+}
+
+.splash-screen {
+  height: 70vh;
+  width: 100%;
+  background-color:#366DFF ;
+  pointer-events: none;
+}
+
+.main-screen {
+  height: 70vh;
+  width: 100%;
+  pointer-events: none;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.mainButton{
+  margin-left: 6rem;
+  font-family: "Pretendard Variable", sans-serif;
+  border-radius: 10px;
+}
+
+
+.header{
+  position: absolute;
+  top: 1rem;
+  left: 1em;
+  /*border-style: solid;*/
+  /*border-color: red;*/
+  width: 360px;
+  height: 49.838px;
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.backIcon{
+  margin-right: 1rem;
+  width: 10%;
+  height: 3rem;
+}
+
+.aiContent{
+  position: relative;
+  top: 2rem;
+}
+
+.content{
+  top: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.locationText{
+  position: absolute;
+  top: 8rem;
+  left: 2rem;
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.locationContent{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.locationButton{
+  color: black;
+  font-size: 1rem;
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: bold;
+  border-radius: 100px;
+  width: 9rem;
+  border: 1px solid #DBDBDB;
+  background: #FBFBFB;
+  --button-hover-bg-color: #366DFF;
+}
+
+.locationFooter{
+  position: absolute;
+  bottom: 2rem;
+}
+
+.confirmButton{
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: bold;
+  color: #333333;
+  width: 20rem;
+  border-radius: 12px;
+  background: #ECECEC;
+}
+
+.rankContent{
+  top: 3rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+
+.ai-screen{
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 10rem;
+}
+
+.schoolContent{
+  height: 56vh;
+  overflow: auto;
+  text-align: center;
+  flex-shrink: 0;
+  position: relative;
+  top: 5rem;
+}
+
+.schoolRank{
+  width: 20rem;
+  font-family: "Pretendard Variable", sans-serif;
+  border-radius: 8px;
+  margin: 0.6rem;
+  background: #FFF;
+  color: #333333;
+}
+
+.rankButton{
+  font-family: "Pretendard Variable", sans-serif;
+  display: flex;
+  width: 19rem;
+  height: 1rem;
+  padding: 2rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  border: 1px solid #366DFF;
+  background: #FFF;
+  color: #366DFF;
+  margin-bottom: 1.5rem;
 }
 
 @keyframes App-logo-spin {
