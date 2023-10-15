@@ -44,6 +44,10 @@ export default function SelectDetailSchool() {
         fetchData();
     }, []);
 
+    const min = 292;
+    const max = 589;
+    const randomStudentCount = Math.floor(Math.random() * (max - min + 1)) + min;
+    
     return (
         <div style={{ marginTop :'300px' }}>
         <Header headerText={`${filteredSchool[0]?.name}`} style={{ width:'320px', fontWeight: 'bold'}}/>
@@ -64,7 +68,7 @@ export default function SelectDetailSchool() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center'}}>
                 <img  style={{ width: '24px', height: '24px', marginRight: '20px', marginLeft: '24px'  }}  src={require('../vendor/icon/student.png')} alt="icon"  />
-                <p style={{ fontFamily :'"Pretendard Variable", sans-serif', fontWeight: '500',fontSize:'14px',lineHeight: '3px'}}  className="category">381명</p>
+                <p style={{ fontFamily :'"Pretendard Variable", sans-serif', fontWeight: '500',fontSize:'14px',lineHeight: '3px'}}  className="category">{randomStudentCount} 명</p>
             </div>
             <div style={{height:'20px'}}></div>
             <div style={{textAlign:'-webkit-center'}}>
