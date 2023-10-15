@@ -12,7 +12,6 @@ export default function SelectDetailSchool() {
     const [address, setAddress] = useState('');
     const [apt, setApt] = useState('');
     const [detail, setDetail] = useState('');
-
     const [randomImageUrl, setRandomImageUrl] = useState('');
 
     useEffect(() => {
@@ -46,14 +45,10 @@ export default function SelectDetailSchool() {
     }, []);
 
     return (
-        <div style={{ textAlign: 'center', marginTop :'250px' }}>
-        <Header headerText={`${filteredSchool[0]?.name}`}/>
-            <div style={{height:'50px'}}></div>
-            <img
-                src={randomImageUrl}
-                alt="Random Image"
-                style={{ textAlign: 'center', width: '320px', height: '160px' }}
-            />
+        <div style={{ marginTop :'300px' }}>
+        <Header headerText={`${filteredSchool[0]?.name}`} style={{ width:'320px', fontWeight: 'bold'}}/>
+            <div style={{height:'40px'}}></div>
+            <img src={randomImageUrl} alt="Random Image" style={{ textAlign: 'center', width: '360px', height: '220px' }}/>
             <div style={{height:'24px'}}></div>
             <div style={{ display: 'flex', alignItems: 'center'}}>
                 <img  style={{ width: '24px', height: '24px', marginRight: '20px', marginLeft: '24px'  }}  src={require('../vendor/icon/location.png')} alt="icon"  />
