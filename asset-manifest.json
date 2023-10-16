@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/wooasa/static/css/main.6edba260.css",
-    "main.js": "/wooasa/static/js/main.4b192f80.js",
+    "main.js": "/wooasa/static/js/main.a1adf55d.js",
     "static/js/787.c7859bc0.chunk.js": "/wooasa/static/js/787.c7859bc0.chunk.js",
     "static/media/bbangbbare.png": "/wooasa/static/media/bbangbbare.03a0e1ab2514f994312c.png",
     "static/media/selectSchool.png": "/wooasa/static/media/selectSchool.d345f547e829f92d8395.png",
     "static/media/splash.png": "/wooasa/static/media/splash.866f7e14eadb59a6553a.png",
     "index.html": "/wooasa/index.html",
     "main.6edba260.css.map": "/wooasa/static/css/main.6edba260.css.map",
-    "main.4b192f80.js.map": "/wooasa/static/js/main.4b192f80.js.map",
+    "main.a1adf55d.js.map": "/wooasa/static/js/main.a1adf55d.js.map",
     "787.c7859bc0.chunk.js.map": "/wooasa/static/js/787.c7859bc0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6edba260.css",
-    "static/js/main.4b192f80.js"
+    "static/js/main.a1adf55d.js"
   ]
 }
