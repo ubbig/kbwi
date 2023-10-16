@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/wooasa/static/css/main.6edba260.css",
-    "main.js": "/wooasa/static/js/main.a1adf55d.js",
+    "main.css": "/wooasa/static/css/main.edeb0a64.css",
+    "main.js": "/wooasa/static/js/main.38289e88.js",
     "static/js/787.c7859bc0.chunk.js": "/wooasa/static/js/787.c7859bc0.chunk.js",
     "static/media/bbangbbare.png": "/wooasa/static/media/bbangbbare.03a0e1ab2514f994312c.png",
     "static/media/selectSchool.png": "/wooasa/static/media/selectSchool.d345f547e829f92d8395.png",
     "static/media/splash.png": "/wooasa/static/media/splash.866f7e14eadb59a6553a.png",
     "index.html": "/wooasa/index.html",
-    "main.6edba260.css.map": "/wooasa/static/css/main.6edba260.css.map",
-    "main.a1adf55d.js.map": "/wooasa/static/js/main.a1adf55d.js.map",
+    "main.edeb0a64.css.map": "/wooasa/static/css/main.edeb0a64.css.map",
+    "main.38289e88.js.map": "/wooasa/static/js/main.38289e88.js.map",
     "787.c7859bc0.chunk.js.map": "/wooasa/static/js/787.c7859bc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6edba260.css",
-    "static/js/main.a1adf55d.js"
+    "static/css/main.edeb0a64.css",
+    "static/js/main.38289e88.js"
   ]
 }
