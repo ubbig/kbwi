@@ -4,11 +4,10 @@ import axios from "axios";
 import React, { useState, useEffect } from 'react';
 import {useParams, Link} from "react-router-dom";
 
-export default function SelectDetailSchool() {
+export default function SelectDetailSeoulSchool() {
     const schoolParams = useParams();
     const schoolId = Number(schoolParams.id);
-    const location = Number(schoolParams.location)
-    const filteredSchool = dummy.schoolList.filter(school => school.id === schoolId && school.locationCode === location);
+    const filteredSchool = dummy.seoulSchool.filter(school => school.id === schoolId);
     const [address, setAddress] = useState('');
     const [apt, setApt] = useState('');
     const [detail, setDetail] = useState('');
@@ -17,6 +16,8 @@ export default function SelectDetailSchool() {
     useEffect(() => {
         const fetchData = async () => {
             try {
+                const API_URL = "https://8296084146.for-seoul.synctreengine.com";
+
                 const jsonImageUrls = dummy.imageUrls;
                 const imageUrl = process.env.PUBLIC_URL;
                 const randomIndex = Math.floor(Math.random() * jsonImageUrls.length);
@@ -31,12 +32,13 @@ export default function SelectDetailSchool() {
 
                 const responseApt = await axios.post('/api/saleList');
                 const responseAptList = responseApt.data.result.response.body.dataBody.ARRAY수;
-                setApt(responseAptList)
+                setApt(responseAptList);
 
                 const responseAptDetail = await axios.post('/api/saleDetail');
                 const responseAptDetailList = responseAptDetail.data.result.response.body.dataBody.ARRAY수;
                 const AptDetailList = responseAptDetailList.slice(0, responseAptList.length);
-                setDetail(AptDetailList)
+                setDetail(AptDetailList);
+
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -52,7 +54,7 @@ export default function SelectDetailSchool() {
         <div style={{ textAlign: 'center', marginTop :'32px'  }}>
         <Header headerText={`${filteredSchool[0]?.name}`} style={{ width:'320px', fontWeight: 'bold'}}/>
             <div style={{height:'40px'}}></div>
-            <img src={randomImageUrl} alt="Random Image" style={{ textAlign: 'center', width: '360px', height: '220px' }}/>
+            <img src={randomImageUrl} alt="Random" style={{ textAlign: 'center', width: '360px', height: '220px' }}/>
             <div style={{height:'24px'}}></div>
             <div style={{ display: 'flex', alignItems: 'center'}}>
                 <img  style={{ width: '24px', height: '24px', marginRight: '20px', marginLeft: '24px'  }}  src={require('../vendor/icon/location.png')} alt="icon"  />
@@ -84,7 +86,7 @@ export default function SelectDetailSchool() {
             <p style={{textAlign:'left', fontFamily :'"Pretendard Variable", sans-serif', fontWeight: 'bold',fontSize:'14px', marginLeft: '20px'}} >총  {apt.length}건</p>
             <div style={{height:'1px', backgroundColor:'#DBDBDB'}}></div>
             <div style={{height:'10px'}}></div>
-            <div style={{  marginLeft: '20px', maxHeight: '400px', overflow: 'scroll' }}>
+            <div style={{ marginLeft: '20px', maxHeight: '400px', overflow: 'scroll' }}>
                 {Array.isArray(apt) && apt.map((item, index) => (
                     <div key={index}>
                         <p style={{ textAlign: 'left', fontFamily: '"Pretendard Variable", sans-serif', fontWeight: '500', fontSize: '14px' }}>{item.단지명}</p>
@@ -98,7 +100,6 @@ export default function SelectDetailSchool() {
                     </div>
                 ))}
             </div>
-
         </div>
     );
 }

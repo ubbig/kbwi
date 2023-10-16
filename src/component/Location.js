@@ -15,13 +15,13 @@ export default function Location() {
     };
 
     return (
-        <div style={{ textAlign: 'center',  marginTop :'220px'  }}>
+        <div style={{ textAlign: 'center', marginTop :'32px'  }}>
             <Header headerText={`${filteredLocations[0]?.area} 순위권`}/>
             <div style={{height:'20px'}}></div>
             <p style={{ textAlign:'left',marginLeft: '20px', fontFamily :'"Pretendard Variable", sans-serif', fontSize:'24px', lineHeight :'3px'}}>학업성취도 평가 기준으로</p>
             <p style={{ textAlign:'left', marginLeft: '20px', fontFamily :'"Pretendard Variable", sans-serif', fontSize:'24px', lineHeight :'3px'}}>선별하였어요</p>
             <div style={{height:'23px'}}></div>
-            <div style={{backgroundColor:'#F7F7F7', width:'360px', height:'800px',overflow: 'scroll'}}>
+            <div style={{backgroundColor:'#F7F7F7', width:'100%', height:'800px',overflow: 'scroll', paddingRight: '0'}}>
             <div style={{height:'22px'}}></div>
                     {schoolRank.map(schoolRank => (
                      <button className="schoolRank" key={schoolRank.id} onClick={() => handleLocationClick(schoolRank)}>

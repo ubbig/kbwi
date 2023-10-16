@@ -6,7 +6,7 @@ import React from "react";
 
 export default function selectSchool(){
     return (
-        <div style={{ textAlign: 'center', marginTop :'52px'  }}>
+        <div style={{ textAlign: 'center', marginTop :'32px'  }}>
             <Header headerText="카테고리 선택"/>
             <div style={{height:'50px'}}></div>
             <p style={{ fontFamily :'"Pretendard Variable", sans-serif', fontWeight :'bold', fontSize:'24px', lineHeight :'3px'}}>서울에는 어떤</p>

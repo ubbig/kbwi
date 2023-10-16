@@ -19,7 +19,7 @@ export default function SelectSchool() {
     };
 
     return (
-        <div style={{ textAlign: 'center', marginTop :'50px'  }}>
+        <div style={{ textAlign: 'center', marginTop :'32px'  }}>
         <Header headerText="지역 선택"/>
             <div style={{height:'50px'}}></div>
             <p style={{ textAlign:'left',marginLeft: '20px', fontFamily :'"Pretendard Variable", sans-serif', fontSize:'24px', lineHeight :'3px'}}>지역을 선택해주시면</p>

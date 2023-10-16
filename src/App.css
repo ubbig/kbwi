@@ -1,12 +1,6 @@
 :root {
   font-family: "Pretendard Variable", sans-serif;
   --vh: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
 }
 
 .root{
@@ -107,6 +101,7 @@
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   gap: 10px;
   max-width: 300px;
+  margin-left: 45px;
 }
 
 .aiButton {
@@ -157,7 +152,8 @@
   border: solid 1px #dbdbdb;
 }
 
-.locationButton:hover{
+.locationButton:hover,
+.locationButton.selected{
   background-color: #366DFF;
   color: white;
   font-weight: bold;

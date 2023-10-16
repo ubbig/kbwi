@@ -9,6 +9,7 @@ import Location from "./component/Location";
 import AiRecommend from "./component/AiRecommend";
 import Seoul from "./component/Seoul";
 import DetailSchool from "./component/DetailSchool";
+import DetailSeoulSchool from "./component/DetailSeoulSchool";
 
 import {BrowserRouter, Route,  Routes} from "react-router-dom";
 import {useEffect} from "react";
@@ -24,12 +25,6 @@ function App() {
         setScreenSize();
     });
 
-    // useEffect(() => {
-    //     const userAgent = navigator.userAgent.toLowerCase();
-    //
-    //     if (userAgent.includes("MOBILE")) {
-    //     }
-    // }, []);
     return (
         <BrowserRouter>
             <Routes>
@@ -42,6 +37,8 @@ function App() {
                 <Route path="/locationSchool" element={<LocationSchool />}>
                 </Route>
                 <Route path="/seoulSchool" element={<Seoul />}>
+                </Route>
+                <Route path="/seoulSchool/:id" element={<DetailSeoulSchool />}>
                 </Route>
                 <Route path="/locationSchool/:location" element={<Location />}>
                 </Route>

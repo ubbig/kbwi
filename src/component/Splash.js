@@ -13,7 +13,9 @@ export default function SplashScreen(){
     function SplashScreen() {
         changeRootBackgroundColor('#366DFF');
         return (
+            <div style={{ textAlign: 'center', marginTop :'126px'  }}>
                 <img src={Splash} alt="SplashScreen" className="splash-screen"/>
+            </div>
         );
     }
 

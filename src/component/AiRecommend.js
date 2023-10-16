@@ -24,7 +24,7 @@ export default function SelectSchool() {
     };
 
     return (
-        <div style={{ textAlign: 'center', marginTop :'50px'  }}>
+        <div style={{ textAlign: 'center', marginTop :'32px'  }}>
             <Header headerText="AI 취향 찾기"/>
             <div style={{height:'50px'}}></div>
             <p style={{ textAlign:'left',marginLeft: '20px', fontFamily :'"Pretendard Variable", sans-serif', fontSize:'24px', lineHeight :'10px'}}><span style={{fontWeight: 'bold'}}>선호하시는 항목</span>이 있나요?</p>
