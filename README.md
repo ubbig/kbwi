@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# 우리아이를 위한 이사
+![image](https://github.com/ubbig/kbwi/assets/81267384/b9ab272c-f5f1-43b0-88ae-58b265b38f7b)
+https://www.figma.com/file/zJYP6Koxcev5YKXEwNr5ME/%EC%8B%B1%ED%81%AC%ED%8A%B8%EB%A6%AC?type=design&node-id=8%3A2&mode=design&t=6hUHBWNqh0SmMwOi-1
+- 사용자 중심의 디자인 접근: 복잡한 결정 과정을 단순화하고, 직관적인 사용자 경험을 제공하기 위해, 피드백을 거쳐 지속적으로 개선했습니다
+                              이 플랫폼은 눈에 띄는 시각적 디자인 요소와 체계적인 레이아웃을 반영했습니다.
+   
+## 프로젝트 목적:
+가족 중심의 결정을 내리는 부모님들에게 최적의 자녀 교육 환경을 제공하기 위해 탄생했습니다. 
+본 서비스는 서울 지역 내 강남과 강북 지역에 특화되어, 자녀의 교육과 가족의 생활 품질 향상을 위한 체계적이고 효율적인 이사 결정을 지원합니다.
+AI 지원을 통한 학교에 대한 정보와 AI추천 맞춤에 사용자친화적인 UI로 사용성을 높였습니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 프로젝트 특징:
+1. 학교 순위 제공: 우아사는 서울 지역의 학교들 중에서 학교알리미(https://www.schoolinfo.go.kr/)정보를 활용하여 학업성취도순, 진학률순 국가수준
+                   정확한 평가 자료를 기반으로 학교 순위를 제공하고 있습니다.
 
-## Available Scripts
+2. 상세한 부동산 정보: 선택된 학교 주변의 KB국민은행에서 제공하는 부동산 API를 활용한 집 매매가격 부동산 정보를 제공합니다.
+                       이를 통해 가족의 예산에 맞는 최적의 집을 찾아, 더 효율적이고 경제적인 결정을 내릴 수 있게 도와줍니다.
 
-In the project directory, you can run:
+3. AI 기반 추천 시스템: ChatGPT를 통합한 최첨단 인공지능 추천 시스템을 통해 사용자의 선호하는 항목 검색으로 학교정보도 제공합니다.
+                        이를 바탕으로 개인화된 학교를 제공하여, 가족에게 가장 적합한 선택지를 제시합니다.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 우리 아이를 위한 이사
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 가족의 미래를 한 걸음 더 나아가게 해주는 서비스입니다. 
+사용자가 원하는 교육에 관한 순위를 기반으로 최적의 학교와 이사지역을 추천함으로써, 아이들이 꿈을 펼칠 수 있는 환경을 제공합니다.
