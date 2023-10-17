@@ -14,54 +14,70 @@
   "recommend": [
     {
       "id": 1,
-      "name": "#순위 높은"
+      "name": "순위 높은"
     },
     {
       "id": 2,
-      "name": "#평점 높은"
+      "name": "평점 높은"
     },
     {
       "id": 3,
-      "name": "#사립"
+      "name": "사립"
     },
     {
       "id": 4,
-      "name": "#국립"
+      "name": "국립"
     },
     {
       "id": 5,
-      "name": "#교직원수가 많은"
+      "name": "교직원수가 많은"
     },
     {
       "id": 6,
-      "name": "#응시자 수가 많은"
+      "name": "응시자 수가 많은"
     },
     {
       "id": 7,
-      "name": "#대학교 진학률 높은"
+      "name": "대학교 진학률 높은"
     },
     {
       "id": 8,
-      "name": "#학생 수가 많은"
+      "name": "학생 수가 많은"
     },
     {
       "id": 9,
-      "name": "#치안 좋은"
+      "name": "치안 좋은"
     },
     {
       "id": 10,
-      "name": "#교복"
+      "name": "교복예쁜"
     },
     {
       "id": 11,
-      "name": "#급식이 맛있는"
+      "name": "급식이 맛있는"
     },
     {
       "id": 12,
-      "name": "#도서관이 잘 되어있는"
+      "name": "도서관이 잘 되어있는"
     }
   ],
   "imageUrls": [
+    { "url": "/img/school_01.png" },
+    { "url": "/img/school_02.png" },
+    { "url": "/img/school_03.png" },
+    { "url": "/img/school_04.png" },
+    { "url": "/img/school_05.png" },
+    { "url": "/img/school_06.png" },
+    { "url": "/img/school_07.png" },
+    { "url": "/img/school_08.png" },
+    { "url": "/img/school_09.png" },
+    { "url": "/img/school_10.png" },
+    { "url": "/img/school_11.png" },
+    { "url": "/img/school_12.png" },
+    { "url": "/img/school_13.png" },
+    { "url": "/img/school_14.png" }
+  ],
+  "thumbnail":[
     {
       "url": "/thumbnail/thumbnail_01.png"
     },
