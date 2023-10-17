@@ -17,14 +17,8 @@ export default function SelectDetailSchool() {
     const instance = axios.create({
         baseURL: "https://8296084146.for-seoul.synctreengine.com",
     });
-    const API_ENDPOINTS = {
-        schoolList: '/api/schoolList',
-        saleList: '/api/saleList',
-        saleDetail: '/api/saleDetail',
-    };
 
     useEffect(() => {
-
         const fetchData = async () => {
             try {
                 const jsonImageUrls = dummy.imageUrls;
@@ -33,17 +27,17 @@ export default function SelectDetailSchool() {
                 const selectedImageUrl = imageUrl + jsonImageUrls[randomIndex].url;
                 setRandomImageUrl(selectedImageUrl);
 
-                const responseSchool = await instance.post(API_ENDPOINTS.schoolList);
+                const responseSchool = await instance.post('/api/schoolList');
                 const responseSchoolList = responseSchool.data.result.response.body.dataBody.ARRAY수;
                 const randomIndexSchool = Math.floor(Math.random() * responseSchoolList.length);
                 const randomItem = responseSchoolList[randomIndexSchool];
                 setAddress(randomItem);
 
-                const responseApt = await instance.post(API_ENDPOINTS.saleList);
+                const responseApt = await instance.post('/api/saleList');
                 const responseAptList = responseApt.data.result.response.body.dataBody.ARRAY수;
                 setApt(responseAptList)
 
-                const responseAptDetail = await instance.post(API_ENDPOINTS.saleDetail);
+                const responseAptDetail = await instance.post('/api/saleDetail');
                 const responseAptDetailList = responseAptDetail.data.result.response.body.dataBody.ARRAY수;
                 const AptDetailList = responseAptDetailList.slice(0, responseAptList.length);
                 setDetail(AptDetailList)
