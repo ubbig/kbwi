@@ -23,7 +23,7 @@ export default function SelectDetailSchool() {
                 const requestData = {
                     prompt: "서울시" + filteredLocations[0]?.name + "정보 적어줘"
                 };
-                axios.post('/synctree-aiservice/gpt-3', requestData)
+                axios.post('/api/synctree-aiservice/gpt-3', requestData)
                     .then((response) => {
                         const modifiedText = response.data.replace(/\n/g, ' ');
                         setResponseData(modifiedText);
