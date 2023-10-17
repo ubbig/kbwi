@@ -2,6 +2,7 @@
   from = "/api/*"
   to = "https://8296084146.for-seoul.synctreengine.com/:splat"
   status = 200
+  headers = {X-From = "Netlify"}
   force = true
 
 [[redirects]]
