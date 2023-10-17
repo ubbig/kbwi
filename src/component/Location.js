@@ -26,7 +26,7 @@ export default function Location() {
                     {schoolRank.map(schoolRank => (
                      <button className="schoolRank" key={schoolRank.id} onClick={() => handleLocationClick(schoolRank)}>
                          <span style={{ color: '#366DFF', fontWeight: 'bold', marginRight:'20px', marginLeft:'20px' }}>{schoolRank.id}</span>
-                         {schoolRank.location}<span style={{ fontWeight: 'bold', marginLeft:'0.4rem'}}>{schoolRank.name}</span>
+                        <span style={{color:'black'}} > {schoolRank.location}</span><span style={{color:'black', fontWeight: 'bold', marginLeft:'0.4rem'}}>{schoolRank.name}</span>
                     </button>
                     ))}
         </div>

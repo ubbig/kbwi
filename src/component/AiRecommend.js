@@ -19,7 +19,6 @@ export default function SelectSchool() {
     const handleConfirmClick = () => {
         console.log("선택한 버튼들:", selectedButtons);
         if (selectedButtons.length > 0) {
-            // navigate(`/locationSchool/${selectedButtons.join(",")}`);
         }
     };
 

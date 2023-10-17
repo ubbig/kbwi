@@ -12,29 +12,34 @@ export default function SelectDetailSeoulSchool() {
     const [apt, setApt] = useState('');
     const [detail, setDetail] = useState('');
     const [randomImageUrl, setRandomImageUrl] = useState('');
+    const API_ENDPOINTS = {
+        schoolList: '/api/schoolList',
+        saleList: '/api/saleList',
+        saleDetail: '/api/saleDetail',
+    };
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const API_URL = "https://8296084146.for-seoul.synctreengine.com";
-
                 const jsonImageUrls = dummy.imageUrls;
                 const imageUrl = process.env.PUBLIC_URL;
                 const randomIndex = Math.floor(Math.random() * jsonImageUrls.length);
                 const selectedImageUrl = imageUrl + jsonImageUrls[randomIndex].url;
                 setRandomImageUrl(selectedImageUrl);
 
-                const responseSchool = await axios.post('/api/schoolList');
+                const responseSchool = await axios.post(API_ENDPOINTS.schoolList);
                 const responseSchoolList = responseSchool.data.result.response.body.dataBody.ARRAY수;
                 const randomIndexSchool = Math.floor(Math.random() * responseSchoolList.length);
                 const randomItem = responseSchoolList[randomIndexSchool];
                 setAddress(randomItem);
 
-                const responseApt = await axios.post('/api/saleList');
+                console.log(responseSchool)
+
+                const responseApt = await axios.post(API_ENDPOINTS.saleList);
                 const responseAptList = responseApt.data.result.response.body.dataBody.ARRAY수;
                 setApt(responseAptList);
 
-                const responseAptDetail = await axios.post('/api/saleDetail');
+                const responseAptDetail = await axios.post(API_ENDPOINTS.saleDetail);
                 const responseAptDetailList = responseAptDetail.data.result.response.body.dataBody.ARRAY수;
                 const AptDetailList = responseAptDetailList.slice(0, responseAptList.length);
                 setDetail(AptDetailList);
@@ -86,14 +91,14 @@ export default function SelectDetailSeoulSchool() {
             <p style={{textAlign:'left', fontFamily :'"Pretendard Variable", sans-serif', fontWeight: 'bold',fontSize:'14px', marginLeft: '20px'}} >총  {apt.length}건</p>
             <div style={{height:'1px', backgroundColor:'#DBDBDB'}}></div>
             <div style={{height:'10px'}}></div>
-            <div style={{ marginLeft: '20px', maxHeight: '400px', overflow: 'scroll' }}>
+            <div style={{ maxHeight: '400px', overflow: 'scroll' }}>
                 {Array.isArray(apt) && apt.map((item, index) => (
                     <div key={index}>
-                        <p style={{ textAlign: 'left', fontFamily: '"Pretendard Variable", sans-serif', fontWeight: '500', fontSize: '14px' }}>{item.단지명}</p>
-                        <p style={{ textAlign: 'left', fontFamily: '"Pretendard Variable", sans-serif', fontWeight: 'bold', fontSize: '20px' }}>매매 {item.매매최저일반평균가} </p>
+                        <p style={{  marginLeft: '20px',textAlign: 'left', fontFamily: '"Pretendard Variable", sans-serif', fontWeight: '500', fontSize: '14px' }}>{item.단지명}</p>
+                        <p style={{  marginLeft: '20px',textAlign: 'left', fontFamily: '"Pretendard Variable", sans-serif', fontWeight: 'bold', fontSize: '20px' }}>매매 {item.매매최저일반평균가} </p>
                         {Array.isArray(detail) && detail.length > index && (
                             <div>
-                                <p style={{ textAlign: 'left', fontFamily: '"Pretendard Variable", sans-serif', fontWeight: '500', fontSize: '14px' }}>{item.물건종별구분명} · {detail[index].면적}㎡ / {detail[index].전용면적}㎡, 총세대수{item.총세대수} </p>
+                                <p style={{ marginLeft: '20px', textAlign: 'left', fontFamily: '"Pretendard Variable", sans-serif', fontWeight: '500', fontSize: '14px' }}>{item.물건종별구분명} · {detail[index].면적}㎡ / {detail[index].전용면적}㎡, 총세대수{item.총세대수} </p>
                             </div>
                         )}
                         <div style={{ height: '1px', backgroundColor: '#DBDBDB' }}></div>

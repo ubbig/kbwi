@@ -22,7 +22,7 @@ export default function Seoul() {
                 {dummy.seoulSchool.map(seoulRank => (
                     <button className="schoolRank" key={seoulRank.id}  onClick={() => handleLocationClick(seoulRank)}>
                         <span style={{ color: '#366DFF', fontWeight: 'bold', marginRight:'20px', marginLeft:'20px' }}>{seoulRank.id}</span>
-                        {seoulRank.location}<span style={{ fontWeight: 'bold', marginLeft:'0.2rem'}}>{seoulRank.name}</span>
+                        <span style={{color:'black'}} > {seoulRank.location}</span><span style={{color:'black', fontWeight: 'bold', marginLeft:'0.2rem'}}>{seoulRank.name}</span>
                     </button>
                 ))}
                 <div style={{height:'20px'}}></div>
