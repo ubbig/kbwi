@@ -2,9 +2,10 @@ import Header from "./Header";
 import dummy from "../db/data.json";
 import axios from "axios";
 import React, { useState, useEffect } from 'react';
-import {useParams, Link} from "react-router-dom";
+import {useParams, useNavigate} from "react-router-dom";
 
 export default function SelectDetailSeoulSchool() {
+    const navigate = useNavigate();
     const schoolParams = useParams();
     const schoolId = Number(schoolParams.id);
     const filteredSchool = dummy.seoulSchool.filter(school => school.id === schoolId);
@@ -12,6 +13,7 @@ export default function SelectDetailSeoulSchool() {
     const [apt, setApt] = useState('');
     const [detail, setDetail] = useState('');
     const [randomImageUrl, setRandomImageUrl] = useState('');
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -26,8 +28,6 @@ export default function SelectDetailSeoulSchool() {
                 const randomIndexSchool = Math.floor(Math.random() * responseSchoolList.length);
                 const randomItem = responseSchoolList[randomIndexSchool];
                 setAddress(randomItem);
-
-                console.log(responseSchool)
 
                 const responseApt = await axios.post('/api/saleList');
                 const responseAptList = responseApt.data.result.response.body.dataBody.ARRAY수;
@@ -48,7 +48,11 @@ export default function SelectDetailSeoulSchool() {
     const min = 292;
     const max = 589;
     const randomStudentCount = Math.floor(Math.random() * (max - min + 1)) + min;
-    
+
+    const handleLocationClick = () => {
+        navigate(`/seoulSchool/infoSchool/`+ schoolId);
+    };
+
     return (
         <div style={{ textAlign: 'center', marginTop :'32px'  }}>
         <Header headerText={`${filteredSchool[0]?.name}`} style={{ width:'320px', fontWeight: 'bold'}}/>
@@ -73,9 +77,7 @@ export default function SelectDetailSeoulSchool() {
             </div>
             <div style={{height:'20px'}}></div>
             <div style={{textAlign:'-webkit-center'}}>
-                <Link className="noneLink" to="/*">
-            <button className="moreButton">더보기 ></button>
-                </Link>
+            <button className="moreButton" onClick={() => handleLocationClick()}>AI 정보 더보기 ></button>
             </div>
             <div style={{height:'32px'}}></div>
             <div style={{height:'5px', backgroundColor:'#DBDBDB'}}></div>

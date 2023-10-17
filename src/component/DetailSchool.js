@@ -2,7 +2,7 @@ import Header from "./Header";
 import dummy from "../db/data.json";
 import axios from "axios";
 import React, { useState, useEffect } from 'react';
-import {useParams, Link} from "react-router-dom";
+import {useParams, useNavigate} from "react-router-dom";
 
 export default function SelectDetailSchool() {
     const schoolParams = useParams();
@@ -13,6 +13,11 @@ export default function SelectDetailSchool() {
     const [apt, setApt] = useState('');
     const [detail, setDetail] = useState('');
     const [randomImageUrl, setRandomImageUrl] = useState('');
+
+    const navigate = useNavigate();
+    const handleLocationClick = () => {
+        navigate(`/locationSchool/infoSchool/` + location+ "/" + schoolId);
+    };
 
     const instance = axios.create({
         baseURL: "/api",
@@ -41,11 +46,6 @@ export default function SelectDetailSchool() {
                 const responseAptDetailList = responseAptDetail.data.result.response.body.dataBody.ARRAY수;
                 const AptDetailList = responseAptDetailList.slice(0, responseAptList.length);
                 setDetail(AptDetailList)
-
-
-                console.log(responseSchool)
-                console.log(responseApt)
-                console.log(responseAptDetail)
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -81,9 +81,7 @@ export default function SelectDetailSchool() {
             </div>
             <div style={{height:'20px'}}></div>
             <div style={{textAlign:'-webkit-center'}}>
-                <Link className="noneLink" to="/*">
-            <button className="moreButton">더보기 ></button>
-                </Link>
+                <button className="moreButton" onClick={() => handleLocationClick()}>AI 정보 더보기 ></button>
             </div>
             <div style={{height:'32px'}}></div>
             <div style={{height:'5px', backgroundColor:'#DBDBDB'}}></div>
@@ -107,7 +105,6 @@ export default function SelectDetailSchool() {
                     </div>
                 ))}
             </div>
-
         </div>
     );
 }
